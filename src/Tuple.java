@@ -1,6 +1,6 @@
 public class Tuple {
 
-    int one, two;
+    private int one, two;
 
     public Tuple (int one, int two) {
         this.one = one;
@@ -29,5 +29,9 @@ public class Tuple {
         } else {
             return two;
         }
+    }
+
+    public int getDifference () {
+        return Math.abs(one - two);
     }
 }
